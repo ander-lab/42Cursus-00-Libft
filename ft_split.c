@@ -6,7 +6,7 @@
 /*   By: Alejandro <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 23:45:28 by Alejandro         #+#    #+#             */
-/*   Updated: 2021/08/09 14:42:38 by Alejandro        ###   ########.fr       */
+/*   Updated: 2021/10/03 18:48:15 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ char	**ft_split(char const *s, char c)
 	while (++index < count_words(s, c))
 	{
 		split[index] = malloc((sizeof(char) * lenght_str(s, c, aux)) + 1);
+		if (!split[index])
+			return (0);
 		sub_index = 0;
 		while (s[aux] == c && s[aux] != '\0')
 			aux++;
