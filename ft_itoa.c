@@ -62,3 +62,12 @@ char	*ft_itoa(int n)
 		str[size] = '-';
 	return (str);
 }
+
+int main(void)
+{
+	int i;
+
+	i = 893712;
+	printf("%s", ft_itoa(i));
+	return (1);
+}

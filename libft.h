@@ -6,7 +6,7 @@
 /*   By: ajimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:13:14 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/08/10 22:17:18 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/10/08 19:01:47 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putnbr_fd(int nb, int fd);
 void			ft_putendl_fd(char *s, int fd);
+void			ft_putmatrix(char **s, size_t lines);
 
 /*
 ** LST - BONUS
