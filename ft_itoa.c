@@ -6,7 +6,7 @@
 /*   By: Alejandro <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 23:25:22 by Alejandro         #+#    #+#             */
-/*   Updated: 2021/08/10 22:18:12 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/11/07 15:29:18 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,13 +61,4 @@ char	*ft_itoa(int n)
 	else if (size == 0 && str[1] != '\0')
 		str[size] = '-';
 	return (str);
-}
-
-int main(void)
-{
-	int i;
-
-	i = 893712;
-	printf("%s", ft_itoa(i));
-	return (1);
 }

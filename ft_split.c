@@ -6,11 +6,8 @@
 /*   By: Alejandro <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 23:45:28 by Alejandro         #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/10/08 18:56:09 by ajimenez         ###   ########.fr       */
-=======
+/*   Updated: 2021/11/07 15:20:31 by ajimenez         ###   ########.fr       */
 /*   Updated: 2021/10/03 18:48:15 by ajimenez         ###   ########.fr       */
->>>>>>> 8146c5a9e2f9b6f4626e04ada5046e6b508171ee
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,20 +74,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (split);
 }
-/*
-int main(void)
-{
-	char **splited;
-	char *inicial;
-	size_t i;
-
-	i = 0;
-	inicial = "hola.me.llamo.alex";
-	splited = ft_split(inicial, '.');
-	while (i<=4)
-	{
-		printf("%s", splited[i]);
-		printf("\n");
-		++i;
-	}
-}*/
