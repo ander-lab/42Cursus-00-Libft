@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_str_have_space.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ajimenez <ajimenez@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 17:11:36 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/11/24 17:12:10 by ajimenez         ###   ########.fr       */
+/*   Created: 2021/11/24 17:08:27 by ajimenez          #+#    #+#             */
+/*   Updated: 2021/11/24 17:10:55 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_str_have_space(char *av)
 {
-	int	i;
+	int	aux;
 
-	if (s != 0)
+	aux = 0;
+	while (av[aux] != 0)
 	{
-		i = 0;
-		while (s[i] != '\0')
-		{
-			ft_putchar_fd(s[i], fd);
-			i++;
-		}
+		if (ft_isspace(av[aux]))
+			return (1);
+		aux++;
 	}
+	return (0);
 }
