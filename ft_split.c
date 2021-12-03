@@ -6,7 +6,7 @@
 /*   By: Alejandro <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 23:45:28 by Alejandro         #+#    #+#             */
-/*   Updated: 2021/11/07 15:20:31 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/03 18:07:00 by ajimenez         ###   ########.fr       */
 /*   Updated: 2021/10/03 18:48:15 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -53,18 +53,14 @@ char	**ft_split(char const *s, char c)
 	int		aux;
 	char	**split;
 
-	if (!s)
+	if (!s || !(*s) || c == 0)
 		return (NULL);
 	split = ft_calloc(sizeof(char *), (count_words(s, c) + 1));
-	if (!split)
-		return (NULL);
 	index = -1;
 	aux = 0;
 	while (++index < count_words(s, c))
 	{
-		split[index] = malloc((sizeof(char) * lenght_str(s, c, aux)) + 1);
-		if (!split[index])
-			return (0);
+		split[index] = ft_calloc(sizeof(char), lenght_str(s, c, aux) + 1);
 		sub_index = 0;
 		while (s[aux] == c && s[aux] != '\0')
 			aux++;
