@@ -6,7 +6,7 @@
 #    By: ajimenez <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/01 17:15:58 by ajimenez          #+#    #+#              #
-#    Updated: 2021/12/07 17:45:05 by ajimenez         ###   ########.fr        #
+#    Updated: 2021/12/09 10:43:18 by ajimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 CC		= gcc
@@ -26,7 +26,7 @@ SRCS	= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_strtrim.c ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c\
 			ft_putendl_fd.c ft_strmapi.c ft_striteri.c ft_itoa.c ft_split.c\
 			ft_putmatrix.c ft_free_matrix.c ft_isspace.c ft_iter_str_bool.c\
-			get_next_line.c
+			get_next_line.c ft_strcpy.c
 
 OBJS	= $(SRCS:.c=.o)
 

@@ -6,11 +6,11 @@
 /*   By: ajimenez <ajimenez@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 12:40:24 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/01 12:41:38 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/09 10:40:25 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-long int ft_atol(const char *str)
+long int	ft_atol(const char *str)
 {
 	int				i;
 	int				s;
