@@ -6,7 +6,7 @@
 /*   By: ajimenez <ajimenez@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 10:29:43 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/09 10:39:49 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/09 12:15:58 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,5 @@ void	ft_strcpy(char *dst, const char *src)
 		dst[index] = src[index];
 		index++;
 	}
+	dst[index] = '\0';
 }
