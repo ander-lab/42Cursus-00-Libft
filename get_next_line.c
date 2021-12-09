@@ -6,7 +6,7 @@
 /*   By: ajimenez <ajimenez@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 12:40:10 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/07 17:44:32 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/09 09:48:50 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #define BUFFER_SIZE 1
 
-void	ft_strdel(char **saved)
+static void	ft_strdel(char **saved)
 {
 	if (saved != NULL)
 	{
@@ -24,7 +24,7 @@ void	ft_strdel(char **saved)
 	}
 }
 
-char	*ft_out(int fd, char *line, char **saved, char *buff)
+static char	*ft_out(int fd, char *line, char **saved, char *buff)
 {
 	char	*ptr;
 	size_t	len;
@@ -45,7 +45,7 @@ char	*ft_out(int fd, char *line, char **saved, char *buff)
 	return (line);
 }
 
-char	*tmp_join(int fd, char **saved, char *buff, ssize_t chars)
+static char	*tmp_join(int fd, char **saved, char *buff, ssize_t chars)
 {
 	char	*tmp;
 
@@ -57,7 +57,7 @@ char	*tmp_join(int fd, char **saved, char *buff, ssize_t chars)
 	return (saved[fd]);
 }
 
-char	*get_line(int fd, char **saved, ssize_t chars, char *buff)
+static char	*get_line(int fd, char **saved, ssize_t chars, char *buff)
 {
 	char	*line;
 
