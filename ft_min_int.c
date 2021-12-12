@@ -6,7 +6,7 @@
 /*   By: ajimenez <ajimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:09:27 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/12 18:51:45 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/12 21:22:13 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 size_t	ft_min_int(size_t *str)
 {
 	size_t	min;
-	int	aux;
+	int		aux;
 
 	aux = 0;
 	min = str[aux];

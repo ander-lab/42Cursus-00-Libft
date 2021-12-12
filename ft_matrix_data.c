@@ -6,7 +6,7 @@
 /*   By: ajimenez <ajimenez@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 15:04:29 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/12 18:06:02 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/12 21:22:32 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ t_matrix_data	ft_matrix_data(char **matrix)
 	t_matrix_data	matrix_data;
 
 	if (!matrix)
-		return (t_matrix_data){0, 0};
+		return ((t_matrix_data){0, 0});
 	matrix_data.line_count = ft_matrixlen(matrix);
 	matrix_data.lenght_str = ft_length(matrix);
 	return (matrix_data);

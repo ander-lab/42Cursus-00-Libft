@@ -6,7 +6,7 @@
 /*   By: ajimenez <ajimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:00:29 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/12 18:52:14 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/12 21:23:00 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 size_t	ft_max_int(size_t *str)
 {
 	size_t	max;
-	int	aux;
+	int		aux;
 
 	aux = 0;
 	max = str[aux];
