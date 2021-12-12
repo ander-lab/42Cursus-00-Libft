@@ -6,7 +6,7 @@
 /*   By: ajimenez <ajimenez@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 15:04:29 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/10 16:03:07 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/12 18:03:45 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ static size_t	*ft_length(char **matrix)
 		length_str[aux] = ft_strlen(matrix[aux]);
 		aux++;
 	}
-	length_str[aux] = '\0';
 	return (length_str);
 }
 
@@ -36,7 +35,7 @@ t_matrix_data	ft_matrix_data(char **matrix)
 	t_matrix_data	matrix_data;
 
 	if (!matrix)
-		return ((t_matrix_data){0, 0});
+		return (matrix_data);
 	matrix_data.line_count = ft_matrixlen(matrix);
 	matrix_data.lenght_str = ft_length(matrix);
 	return (matrix_data);
