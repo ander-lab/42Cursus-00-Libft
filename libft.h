@@ -6,7 +6,7 @@
 /*   By: ajimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:13:14 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/10 16:02:37 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/12 17:19:38 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ char			**ft_split(char const *s, char c);
 void			ft_free_matrix(char **matrix);
 int				ft_iter_str_bool(char *str, int (*f)(int));
 char			*get_next_line(int fd);
+int				ft_min_int(int *str);
+int				ft_max_int(int *str);
 /*
 **Matrix Library
 */
