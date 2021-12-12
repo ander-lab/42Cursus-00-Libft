@@ -6,22 +6,23 @@
 /*   By: ajimenez <ajimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:00:29 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/12 18:25:24 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/12 18:52:14 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <sys/_types/_size_t.h>
 
-int	ft_max_int(int *str)
+size_t	ft_max_int(size_t *str)
 {
-	int	max;
+	size_t	max;
 	int	aux;
 
 	aux = 0;
 	max = str[aux];
 	while (str[aux])
 	{
-		if (max < str[aux])
+		if (max <= str[aux])
 			max = str[aux];
 		aux++;
 	}
