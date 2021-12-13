@@ -6,7 +6,7 @@
 /*   By: ajimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:13:14 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/12 20:43:14 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/13 11:43:16 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <sys/_types/_size_t.h>
+# include <sys/_types/_ssize_t.h>
 # include <unistd.h>
 
 typedef struct s_list
@@ -29,8 +30,10 @@ typedef struct s_list
 
 typedef struct s_matrix_data
 {
-	size_t	line_count;
-	size_t	*lenght_str;
+	ssize_t		line_count;
+	ssize_t		*lenght_str;
+	ssize_t		max;
+	ssize_t		min;
 }	t_matrix_data;
 /*
 **Is Library
@@ -72,8 +75,8 @@ char			**ft_split(char const *s, char c);
 void			ft_free_matrix(char **matrix);
 int				ft_iter_str_bool(char *str, int (*f)(int));
 char			*get_next_line(int fd);
-size_t			ft_max_int(size_t *str);
-size_t			ft_min_int(size_t *str);
+ssize_t			ft_max_int(ssize_t *str, ssize_t len);
+ssize_t			ft_min_int(ssize_t *str, ssize_t len);
 size_t			count_chars(char c, char *str);
 /*
 **Matrix Library

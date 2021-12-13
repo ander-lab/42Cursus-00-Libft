@@ -6,20 +6,20 @@
 /*   By: ajimenez <ajimenez@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 15:04:29 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/12 21:22:32 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/13 11:44:17 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
 
-static size_t	*ft_length(char **matrix)
+static ssize_t	*ft_length(char **matrix)
 {
-	size_t	aux;
-	size_t	*length_str;
+	ssize_t	aux;
+	ssize_t	*length_str;
 
 	aux = 0;
-	length_str = malloc(sizeof(size_t) * (ft_matrixlen(matrix) + 1));
+	length_str = malloc(sizeof(size_t) * (ft_matrixlen(matrix)));
 	if (!length_str)
 		return (0);
 	while (matrix[aux] != NULL)
@@ -32,11 +32,13 @@ static size_t	*ft_length(char **matrix)
 
 t_matrix_data	ft_matrix_data(char **matrix)
 {
-	t_matrix_data	matrix_data;
+	t_matrix_data	data;
 
 	if (!matrix)
-		return ((t_matrix_data){0, 0});
-	matrix_data.line_count = ft_matrixlen(matrix);
-	matrix_data.lenght_str = ft_length(matrix);
-	return (matrix_data);
+		return ((t_matrix_data){0, 0, 0, 0});
+	data.line_count = ft_matrixlen(matrix);
+	data.lenght_str = ft_length(matrix);
+	data.max = ft_max_int(data.lenght_str, data.line_count);
+	data.min = ft_min_int(data.lenght_str, data.line_count);
+	return (data);
 }

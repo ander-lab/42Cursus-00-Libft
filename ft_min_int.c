@@ -6,21 +6,21 @@
 /*   By: ajimenez <ajimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:09:27 by ajimenez          #+#    #+#             */
-/*   Updated: 2021/12/12 21:22:13 by ajimenez         ###   ########.fr       */
+/*   Updated: 2021/12/13 11:42:31 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <sys/_types/_size_t.h>
 
-size_t	ft_min_int(size_t *str)
+ssize_t	ft_min_int(ssize_t *str, ssize_t len)
 {
-	size_t	min;
+	ssize_t	min;
 	int		aux;
 
 	aux = 0;
 	min = str[aux];
-	while (str[aux])
+	while (aux <= len)
 	{
 		if (min >= str[aux])
 			min = str[aux];
