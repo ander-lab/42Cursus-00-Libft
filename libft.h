@@ -6,7 +6,7 @@
 /*   By: ajimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:13:14 by ajimenez          #+#    #+#             */
-/*   Updated: 2022/03/04 14:21:05 by ajimenez         ###   ########.fr       */
+/*   Updated: 2023/01/08 14:26:53 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,6 +112,7 @@ int				ft_atoi(const char *str);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 char			*ft_itoa(int n);
+long			ft_atob(const char *s);
 
 /*
 ** Put Library
