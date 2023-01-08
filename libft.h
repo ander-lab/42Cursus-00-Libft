@@ -6,7 +6,7 @@
 /*   By: ajimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 14:13:14 by ajimenez          #+#    #+#             */
-/*   Updated: 2023/01/08 14:26:53 by ajimenez         ###   ########.fr       */
+/*   Updated: 2023/01/08 15:46:52 by ajimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,7 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 char			*ft_itoa(int n);
 long			ft_atob(const char *s);
+int				ft_boti(long binary);
 
 /*
 ** Put Library
